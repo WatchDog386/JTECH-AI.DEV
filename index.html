@@ -1,0 +1,76 @@
+<!-- © 2025 Jeff. All rights reserved.
+Unauthorized copying, distribution, or modification of this file is strictly prohibited. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 36"><path d="M19.28 11.25H12.85V15.75H19.28V11.25Z" fill="%23001226"/><path d="M19.28 20.25H12.85V24.75H19.28V20.25Z" fill="%23001226"/><path d="M9.64 6.75H25.71V2.25H9.64V6.75Z" fill="%23001226"/><path d="M9.64 29.25H25.71V24.75H9.64V29.25Z" fill="%23001226"/><path d="M6.42 11.25H0V24.75H6.42V11.25Z" fill="%23001226"/><path d="M32.14 11.25H25.71V24.75H32.14V11.25Z" fill="%23001226"/><path d="M38.57 15.75H32.14V20.25H38.57V15.75Z" fill="%23001226"/><circle cx="22.5" cy="13.5" r="2.25" fill="%230077B6"/><circle cx="22.5" cy="22.5" r="2.25" fill="%230077B6"/><path d="M22.5 15.75V20.25" stroke="%230077B6" stroke-width="1.5"/></svg>' type="image/svg+xml" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTech AI - Professional Construction Management SaaS</title>
+    <meta name="description" content="Kenya's leading construction management platform. Create professional quotes, manage projects, and grow your construction business with JTech AI." />
+    <meta name="author" content="Jeffrey" />
+    <meta property="og:title" content="JTech AI - Professional Construction Management SaaS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="AI-powered construction management platform. Generate accurate quotes, manage projects, and grow your business with Jtech AI." />
+    <meta property="og:image" content="/icon.ico" />
+    <meta property="og:url" content="https://jtechai.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jtech_ke" />
+    <meta name="twitter:image" content="/logo.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      /* Critical CSS for the Loading Screen */
+      body { margin: 0; background-color: #F5F7FA; font-family: 'Inter', sans-serif; }
+      .app-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        background-color: #F5F7FA;
+        transition: opacity 0.5s ease-out;
+      }
+      .logo-pulse {
+        animation: pulse-opacity 2s infinite ease-in-out;
+      }
+      @keyframes pulse-opacity {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.02); }
+      }
+    </style>
+  </head>
+
+  <body class="transition-colors duration-500">
+    <div id="root">
+      <div class="app-loader">
+        <div class="logo-pulse">
+          <svg width="180" height="48" viewBox="0 0 135 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.2857 11.25H12.8571V15.75H19.2857V11.25Z" fill="#001226"/>
+            <path d="M19.2857 20.25H12.8571V24.75H19.2857V20.25Z" fill="#001226"/>
+            <path d="M9.64286 6.75H25.7143V2.25H9.64286V6.75Z" fill="#001226"/>
+            <path d="M9.64286 29.25H25.7143V24.75H9.64286V29.25Z" fill="#001226"/>
+            <path d="M6.42857 11.25H0V24.75H6.42857V11.25Z" fill="#001226"/>
+            <path d="M32.1429 11.25H25.7143V24.75H32.1429V11.25Z" fill="#001226"/>
+            <path d="M38.5714 15.75H32.1429V20.25H38.5714V15.75Z" fill="#001226"/>
+            <circle cx="22.5" cy="13.5" r="2.25" fill="#0077B6"/>
+            <circle cx="22.5" cy="22.5" r="2.25" fill="#0077B6"/>
+            <path d="M22.5 15.75V20.25" stroke="#0077B6" stroke-width="1.5"/>
+            <text x="45" y="24" font-family="Inter, sans-serif" font-weight="bold" font-size="22" fill="#001226">JTech</text>
+            <text x="108" y="24" font-family="Inter, sans-serif" font-weight="bold" font-size="22" fill="#0077B6">AI</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
